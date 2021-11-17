@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
-import FriendCard from "./FriendCard";
+import React from 'react'
 
 function FriendsList() {
-    const [arrayOfFriends, setarrayOfFriends] = useState([])
 
 
 useEffect(() => {
@@ -19,5 +17,4 @@ fetch("http://localhost:3000/people")
 
 }
 
-export default FriendsList;
-
+export default FriendsList

@@ -44,7 +44,7 @@ fetch("http://localhost:3000/people", {
 
   return (
     <div className="new-plant-form">
-      <h2>New Plant</h2>
+      <h2>New </h2>
       <form onSubmit={addNewFriend}>
         <input type="text" name="name" placeholder="Plant name" onChange={captureName}/>
         <input type="text" name="image" placeholder="Image URL" onChange={captureImage}/>
