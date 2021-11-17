@@ -19,10 +19,10 @@ function FriendPage() {
   }
 
   return (
-    <main>
+    <div id ="friendPage">
       <NewFriendForm arrayOfFriends={arrayOfFriends} setarrayOfFriends={setarrayOfFriends} handleFriend={handleFriend}/>
       <FriendsList arrayOfFriends={arrayOfFriends} setarrayOfFriends={setarrayOfFriends} />
-    </main>
+    </div>
   );
 }
 
