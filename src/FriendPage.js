@@ -20,6 +20,7 @@ function FriendPage() {
 
   return (
     <main>
+      <p>hello there</p>
       <NewFriendForm arrayOfFriends={arrayOfFriends} setarrayOfFriends={setarrayOfFriends} handleFriend={handleFriend}/>
       <FriendsList arrayOfFriends={arrayOfFriends} setarrayOfFriends={setarrayOfFriends} />
     </main>
