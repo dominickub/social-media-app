@@ -1,0 +1,39 @@
+
+h1{
+    text-align: right;
+    
+    margin-top: 150px;
+    display: inline-block;
+
+} 
+p.description{
+    
+    display: inline-block;
+
+}
+
+ img{
+    display: inline-block;
+
+ }
+ .header{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: end;
+    align-items: end;
+    align-content: end;
+    text-align: left;
+    padding:20px;
+    max-width: 1000px;
+
+ }
+ .emoji-button.delete:hover {
+    text-shadow: 0 0 0 firebrick;
+    cursor: pointer;
+  }
+  .emoji-button {
+    border: none;
+    background: none;
+    padding: 0 0.25rem;
+    cursor: pointer;
+  }
