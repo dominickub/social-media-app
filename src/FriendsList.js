@@ -4,6 +4,7 @@ import FriendCard from "./FriendCard";
 function FriendsList() {
     const [arrayOfFriends, setarrayOfFriends] = useState([])
 
+
 useEffect(() => {
 fetch("http://localhost:3000/people")
 .then(r => r.json())
@@ -15,6 +16,7 @@ fetch("http://localhost:3000/people")
       return <FriendCard key={ix} friendObj={friendObj}/>
     })}</ul>
   );
+
 }
 
 export default FriendsList;
