@@ -15,7 +15,9 @@ function FriendPage() {
   // }
 
   function handleFriend(data) {
-    setarrayOfFriends([...arrayOfFriends, data])
+    console.log("is this working", data)
+    var newArray = ([...arrayOfFriends, data])
+    setarrayOfFriends(newArray)
   }
 
   return (
