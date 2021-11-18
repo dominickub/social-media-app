@@ -35,8 +35,8 @@ function Profile() {
     console.log(posts)
 
     return (
-    <>  
-        <div className="header">
+    <div id ="profile">  
+        <div  className="header">
               <img className="profilePicture" alt="batman" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVyQMP1k2EL_6pz-Qqbz3p8QviHfNgwdYJCA&usqp=CAU" />
           <div>
 
@@ -44,12 +44,13 @@ function Profile() {
             <p className="description">I casually protect the Gotham</p>
           </div>
         
-        </div>
+        </div >
+        
             <NewPostForm handleAddPost={handleAddPost}/>
             <PostsList deletePost={deletePost} posts ={posts}/>
             <p></p>
        
-    </>
+    </div>
     )
 }
 

@@ -27,10 +27,10 @@ function NewPostForm({handleAddPost}) {
         setComments(e.target.value)
       }
     return (
-    <div>
-        <form onSubmit = {handleSubmit} >
-        <input type="text" name="comments" placeholder="What are you thinking?" onChange={onChangePost}/>
-        <button type="submit"> Post</button>
+    <div >
+        <form className ="InputBar" onSubmit = {handleSubmit} >
+        <input className= "InputField" type="text" name="comments" placeholder="What are you thinking?" onChange={onChangePost}/>
+        <button className ="submitButton"type="submit"> Post</button>
         </form>
             
     </div>

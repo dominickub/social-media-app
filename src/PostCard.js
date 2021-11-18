@@ -16,7 +16,7 @@ function PostCard({ comments,deletePost,id }) {
 
         <div>
            
-            <p> <button className="emoji-button delete" onClick={e => handleDelete(id)}>🗑</button>  {comments}</p>
+            <p className="pTags"> <button className="emoji-button delete" onClick={e => handleDelete(id)}>🗑</button>  {comments}</p>
 
         </div>
     )

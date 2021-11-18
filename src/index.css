@@ -12,6 +12,7 @@ code {
     monospace;
 }
 
+
 /* .cards {
   list-style: none;
 }
@@ -133,4 +134,24 @@ p {
   line-height: 26px;
   margin-bottom: 20px;
   color: #666;
+
+nav a:hover,
+nav a:avtive {
+  color:tomato;
+  border-bottom: 2px solid rgb(22, 21, 21);
+}
+
+nav a.avtive{
+  background-color: #0000ff;
+  color:wheat ;
+}
+nav a {
+  display: inline-block;
+  margin: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: firebrick;
+  border-bottom: 2px solid firebrick;
+  transition: 0.1s;
+
 }
