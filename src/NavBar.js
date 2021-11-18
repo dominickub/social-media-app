@@ -6,7 +6,7 @@ function NavBar() {
    
     
     return (
-        <nav>
+        <nav className = "navBar">
             <Link to="/FriendPage">Friend Page</Link>
             <Link to="/About">About</Link>
             <Link to="/Profile">Profile</Link>

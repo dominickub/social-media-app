@@ -8,7 +8,7 @@ import NavBar from './NavBar'
  
 
 function App() {
-  const [page, setPage] = useState("/")
+  const [page, setPage] = useState("/profile")
 
   return (
   <div>

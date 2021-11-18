@@ -44,7 +44,8 @@ function Profile() {
             <p className="description">I casually protect the Gotham</p>
           </div>
         
-        </div>
+        </div >
+        
             <NewPostForm handleAddPost={handleAddPost}/>
             <PostsList deletePost={deletePost} posts ={posts}/>
             <p></p>
