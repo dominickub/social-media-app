@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NewFriendForm from "./NewFriendForm";
 import FriendsList from "./FriendsList";
 // import Search from "./Search";
@@ -14,15 +14,21 @@ function FriendPage() {
   //   setarrayOfFriends(searchArray)
   // }
 
+  useEffect(() => {
+    fetch("http://localhost:3000/people")
+    .then(r => r.json())
+    .then(data => setarrayOfFriends(data))
+    }, [])
+
   function handleFriend(data) {
     console.log("is this working", data)
-    var newArray = ([...arrayOfFriends, data])
+    const newArray = [...arrayOfFriends, data]
     setarrayOfFriends(newArray)
   }
 
   return (
 
-    <div>
+    <div id='html'>
       <NewFriendForm arrayOfFriends={arrayOfFriends} setarrayOfFriends={setarrayOfFriends} handleFriend={handleFriend}/>
       <FriendsList arrayOfFriends={arrayOfFriends} setarrayOfFriends={setarrayOfFriends} />
     </div>
