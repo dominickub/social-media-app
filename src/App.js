@@ -7,7 +7,7 @@ import FriendPage from './FriendPage';
 
 import About from './About'
 import NavBar from './NavBar'
- 
+
 
 function App() {
   const [page, setPage] = useState("/profile")
