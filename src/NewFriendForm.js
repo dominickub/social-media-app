@@ -6,23 +6,19 @@ const [image, setImage] = useState('')
 const [price, setPrice] = useState('')
 
 function captureName(e) {
-  e.preventDefault()
   setName(e.target.value)
 }
 
 function captureImage(e) {
-  e.preventDefault()
   setImage(e.target.value)
 }
 
 function capturePrice(e) {
-  e.preventDefault()
   setPrice(e.target.value)
 }
 
 function addNewFriend(e) {
   e.preventDefault()
-
 
   const newObj = {
     name: name,
@@ -38,15 +34,18 @@ fetch("http://localhost:3000/people", {
   body: JSON.stringify(newObj)
 })
 .then(r => r.json())
-.then(data => handleFriend(data))
+.then(data => {
+  handleFriend(data)
+  })
+  e.target.reset()
 
 }
 
   return (
     <div className="new-plant-form">
-      <h2>New Plant</h2>
+      <h2>New </h2>
       <form onSubmit={addNewFriend}>
-        <input type="text" name="name" placeholder="Plant name" onChange={captureName}/>
+        <input type="text" name="name" placeholder="Name" onChange={captureName}/>
         <input type="text" name="image" placeholder="Image URL" onChange={captureImage}/>
         <input type="number" name="price" step="0.01" placeholder="Price" onChange={capturePrice}/>
         <button type="submit">Add Friend</button>

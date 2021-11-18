@@ -15,11 +15,14 @@ function FriendPage() {
   // }
 
   function handleFriend(data) {
-    setarrayOfFriends([...arrayOfFriends, data])
+    console.log("is this working", data)
+    var newArray = ([...arrayOfFriends, data])
+    setarrayOfFriends(newArray)
   }
 
   return (
-    <div id ="friendPage">
+
+    <div>
       <NewFriendForm arrayOfFriends={arrayOfFriends} setarrayOfFriends={setarrayOfFriends} handleFriend={handleFriend}/>
       <FriendsList arrayOfFriends={arrayOfFriends} setarrayOfFriends={setarrayOfFriends} />
     </div>
